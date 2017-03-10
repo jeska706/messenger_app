@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root to: 'home#index'
   resources :trainers, except: [:index] do
       resources :chats, except: [:update, :destroy]
   end

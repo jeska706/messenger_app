@@ -1,11 +1,6 @@
 class TrainersController < ApplicationController
-  before_action :set_trainer, only: [:show, :edit, :update, :destroy]
+  before_action :set_trainer, only: [:show, :edit, :update, :destroy, :create]
 
-  # GET /trainers
-  # GET /trainers.json
-  def index
-    @trainers = Trainer.all
-  end
 
   # GET /trainers/1
   # GET /trainers/1.json
